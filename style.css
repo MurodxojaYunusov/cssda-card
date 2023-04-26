@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vb;
+    scale: 1;
+}
+img{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    background-color: aqua;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1);
+    animation: img 2s infinite;
+}
+@keyframes img{
+    50%{
+        transform: translate(600px);
+        /* transform: scale(2); */
+    }
+    100%{
+        transform: translate(700px);
+        transform: scale(3);
+    }
+    
+}
